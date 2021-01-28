@@ -52,6 +52,7 @@ class Directory extends React.Component {
                 this.state.sections.map(({id, ...otherSectionProps}) => (
                     // <MenuItem key={id} title={title} img={imageUrl} size={size} />
                     <MenuItem key={id} {...otherSectionProps} />
+                    // We are using the spread operator in order to parse through the other keys within our objects.
                 ))
             }
             </div>
